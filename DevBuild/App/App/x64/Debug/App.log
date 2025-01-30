@@ -1,0 +1,29 @@
+﻿  calculator.cpp
+  Game.cpp
+  GameManager.cpp
+  HealthBarUI.cpp
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\HealthBarUI.cpp(16,108): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\HealthBarUI.cpp(16,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\HealthBarUI.cpp(23,107): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\HealthBarUI.cpp(31,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\HealthBarUI.cpp(31,94): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\HealthBarUI.cpp(39,104): warning C4305: 'argument': truncation from 'double' to 'float'
+  Inventory.cpp
+  ItemContainer.cpp
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ItemContainer.cpp(75,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ItemContainer.cpp(76,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ItemContainer.cpp(100,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ItemContainer.cpp(101,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  GameArea.cpp
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\Scenes\GameArea.cpp(152,81): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\Scenes\GameArea.cpp(152,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Main.cpp
+  RadioButtonManager.cpp
+  TestArea.cpp
+  ScoreUIComponent.cpp
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ScoreUIComponent.cpp(15,98): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ScoreUIComponent.cpp(22,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\App\ScoreUIComponent.cpp(22,90): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  App.vcxproj -> C:\Users\jayli\OneDrive\Desktop\preForceStuff\24FA-GAP361_VC1\jferrell4\DevBuild\App\x64\Debug\App.exe

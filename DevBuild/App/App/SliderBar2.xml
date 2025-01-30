@@ -1,0 +1,29 @@
+<gameObject active ="false">
+	<nameId>SliderBar2</nameId>
+	<tag>Volume Menu</tag>
+	<component name="TransformComponent">
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>400</scaleX>
+		<scaleY>20</scaleY>
+	</component>
+	<component name="AlignmentComponent">
+		<alignmentType>TOP</alignmentType>
+		<positionOffsetX>4</positionOffsetX>
+		<positionOffsetY>11</positionOffsetY>
+	</component>
+	<component name="SpriteComponent">
+		<fileName>SliderGroove.png.</fileName>
+		<numOfFrames>0</numOfFrames>
+		<animationSpeed>0</animationSpeed>
+		<textureColorValue_R>0</textureColorValue_R>
+		<textureColorValue_G>255</textureColorValue_G>
+		<textureColorValue_B>0</textureColorValue_B>
+	</component>
+	<component name="SliderComponent">
+		<fileName>SliderKnob.png.</fileName>
+	</component>
+
+</gameObject>

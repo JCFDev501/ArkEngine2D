@@ -1,0 +1,78 @@
+Log: Greeting User...
+Log: Attempting to initialize engine...
+Log: SDL_Init() succeeded!!
+Log: Mix_OpenAudio() succeeded.
+Log: TTF_Init() succeeded.
+Log: Initialize successful!
+Log: (SDL_CreateWindow() succeeded!!
+Log: Attempting to create hardware-accelerated renderer....
+Log: CreateRenderer() succeeded!!
+Log: Opened Assets file
+Log: This is a Zip file
+Log: StartButton.png
+Log: File signature failed
+Log: Failed to load assets.zip
+Log: Input Created
+Log: MAIN
+Log: PLAY
+Log: OPTIONS
+Log: QUIT
+Log: SONGS
+Log: INPUT
+Log: Inventory
+Log: BACK
+Log: BACK
+Log: NONE
+Log: BACK
+Log: PLAY
+Log: OPTIONS
+Log: DIFFICULTY
+Log: VOLUME
+Log: BACK
+Log: DIFFICULTY
+Log: HINTS
+Log: PERMADEATH
+Log: RESPAWN
+Log: EASY
+Log: NORMAL
+Log: HARD
+Log: BACK
+Log: VOLUME
+Log: MUTE
+Log: MONO
+Log: STEREO
+Log: SFX
+Log: MUSIC
+Log: VOICE
+Log: BACK
+Log: BACK
+Log: NONE
+Log: NONE
+Log: NONE
+Log: BACK
+Log: NONE
+Log: BACK
+Log: You Clicked the Start Button
+Log: You Clicked the Language Button
+Log: You Clicked the AmericaLanguageButton
+Log: You Clicked the Language Button
+Log: You Clicked the FranceLanguageButton
+Log: You Clicked the Language Button
+Log: You Clicked the AmericaLanguageButton
+Log: You Clicked the Options Button
+Log: You Clicked the Difficulty Button
+Log: You Clicked the Back Button
+Log: You Clicked the Back Button
+Log: You Clicked the Songs Button
+Log: You Clicked the Back Button
+Log: You Clicked the Input Button
+Log: You Clicked the Input Back Button
+Log: Calculator Activated
+Log: Calculator Deactivated
+Log: You Clicked the Play Button
+Log: You Clicked the Max Character Select Button
+Log: You Clicked the Max Wedding Select Button
+Log: You Clicked the ReadyPlayButton
+Log: PAUSE
+Log: CONTINUE
+Log: QUIT

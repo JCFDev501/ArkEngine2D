@@ -1,0 +1,34 @@
+<gameObject active ="false">
+	<nameId>PermadeathRespawnToggleButton</nameId>
+	<tag>Difficulty Menu</tag>
+	<component name="TransformComponent">
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>150</scaleX>
+		<scaleY>68</scaleY>
+	</component>
+	<component name="AlignmentComponent">
+		<alignmentType>TOP</alignmentType>
+		<positionOffsetX>.9</positionOffsetX>
+		<positionOffsetY>6</positionOffsetY>
+	</component>
+	<component name="SpriteComponent">
+		<fileName>ToggleTray.png</fileName>
+		<numOfFrames>0</numOfFrames>
+		<animationSpeed>0</animationSpeed>
+		<textureColorValue_R>0</textureColorValue_R>
+		<textureColorValue_G>255</textureColorValue_G>
+		<textureColorValue_B>0</textureColorValue_B>
+	</component>
+	<component name="ButtonComponent">
+		<buttonHoverColorR>255</buttonHoverColorR>
+		<buttonHoverColorG>255</buttonHoverColorG>
+		<buttonHoverColorB>0</buttonHoverColorB>
+	</component>
+	<component name="ToggleBoxComponent">
+		<fileName>ToggleKnob.png</fileName>
+	</component>
+
+</gameObject>

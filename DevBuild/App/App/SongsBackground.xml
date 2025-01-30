@@ -1,0 +1,25 @@
+<gameObject active ="false">
+	<nameId>SongsBackground</nameId>
+	<tag>Songs Menu</tag>
+	<component name="TransformComponent">
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>1024</scaleX>
+		<scaleY>768</scaleY>
+	</component>
+	<component name="AlignmentComponent">
+		<alignmentType>TOP</alignmentType>
+		<positionOffsetX>0</positionOffsetX>
+		<positionOffsetY>0</positionOffsetY>
+	</component>
+	<component name="SpriteComponent">
+		<fileName>SongBackground.png</fileName>
+		<numOfFrames> 0 </numOfFrames>
+		<animationSpeed> 0 </animationSpeed>
+		<textureColorValue_R> 255 </textureColorValue_R>
+		<textureColorValue_G> 255 </textureColorValue_G>
+		<textureColorValue_B> 255 </textureColorValue_B>
+	</component>
+</gameObject>

@@ -1,0 +1,18 @@
+<gameObject>
+	<nameId>StartButtonText</nameId>
+	<tag>Level</tag>
+	<component name="TransformComponent">
+		<positionX>13</positionX>
+		<positionY>22.5</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>812</scaleX>
+		<scaleY>64</scaleY>
+	</component>
+	<component name="TextUiComponent">
+		<fileName>Assets/ComicNeue-Bold.ttf</fileName>
+		<FontSize> 30 </FontSize>
+		<pText> PRESS START </pText>
+	</component>
+</gameObject>
+

@@ -1,0 +1,89 @@
+<gameObject active ="false">
+	<nameId>DifficultyBackground</nameId>
+	<tag>Difficulty Menu</tag>
+	<component name="TransformComponent">
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>1024</scaleX>
+		<scaleY>768</scaleY>
+	</component>
+	<component name="AlignmentComponent">
+		<alignmentType>TOP</alignmentType>
+		<positionOffsetX>0</positionOffsetX>
+		<positionOffsetY>0</positionOffsetY>
+	</component>
+	<component name="SpriteComponent">
+		<fileName>DifficultyBackground.png</fileName>
+		<numOfFrames>0</numOfFrames>
+		<animationSpeed>0</animationSpeed>
+		<textureColorValue_R>255</textureColorValue_R>
+		<textureColorValue_G>255</textureColorValue_G>
+		<textureColorValue_B>255</textureColorValue_B>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>TOP</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<pText>DIFFICULTY</pText>
+		<pTag>DIFFICULTY</pTag>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>TOP</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>-6</positionX>
+		<positionY>4</positionY>
+		<pText>HINTS</pText>
+		<pTag>HINTS</pTag>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>TOP</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>-8.4</positionX>
+		<positionY>6.1</positionY>
+		<pText>PERMADEATH</pText>
+		<pTag>PERMADEATH</pTag>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>TOP</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>8</positionX>
+		<positionY>6.1</positionY>
+		<pText>RESPAWN</pText>
+		<pTag>RESPAWN</pTag>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>LEFT</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>5</positionX>
+		<positionY>4.3</positionY>
+		<pText>EASY</pText>
+		<pTag>EASY</pTag>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>LEFT</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>14.3</positionX>
+		<positionY>4.3</positionY>
+		<pText>NORMAL</pText>
+		<pTag>NORMAL</pTag>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>LEFT</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>24</positionX>
+		<positionY>4.3</positionY>
+		<pText>HARD</pText>
+		<pTag>HARD</pTag>
+	</component>
+</gameObject>
+

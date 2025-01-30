@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e295eefb-b970-4f8b-9c34-a6ccb5e2c4ef}</ProjectGuid>
+    <RootNamespace>ArksEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Build\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Build\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Build\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Build\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL2_Image\include;$(SolutionDir)lib\SDL2_Mixer\include;$(SolutionDir)lib\zlib;$(SolutionDir)lib\lua\include;$(SolutionDir)lib\SDL2_TTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)" /s /e /i /y
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libtiff-5.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libFLAC-8.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmodplug-1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbisfile-3.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_TTF\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;zlibstat.lib;LuaProject.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL2_Image\lib\x64;$(SolutionDir)lib\SDL2_Mixer\lib\x64;$(SolutionDir)lib\zlib\contrib\vstudio\vc14\x64\ZlibStat$(Configuration);$(SolutionDir)lib\SDL2_TTF\lib\x64;$(SolutionDir)lib\lua\lib\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL2_Image\include;$(SolutionDir)lib\SDL2_Mixer\include;$(SolutionDir)lib\zlib;$(SolutionDir)lib\lua\include;$(SolutionDir)lib\SDL2_TTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)" /s /e /i /y
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libtiff-5.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libFLAC-8.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmodplug-1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbisfile-3.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_TTF\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;zlibstat.lib;LuaProject.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL2_Image\lib\x64;$(SolutionDir)lib\SDL2_Mixer\lib\x64;$(SolutionDir)lib\zlib\contrib\vstudio\vc14\x64\ZlibStat$(Configuration);$(SolutionDir)lib\SDL2_TTF\lib\x64;$(SolutionDir)lib\lua\lib\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL2_Image\include;$(SolutionDir)lib\SDL2_Mixer\include;$(SolutionDir)lib\zlib;$(SolutionDir)lib\lua\include;$(SolutionDir)lib\SDL2_TTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;zlibstat.lib;LuaProject.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL2_Image\lib\x64;$(SolutionDir)lib\SDL2_Mixer\lib\x64;$(SolutionDir)lib\zlib\contrib\vstudio\vc14\x64\ZlibStat$(Configuration);$(SolutionDir)lib\SDL2_TTF\lib\x64;$(SolutionDir)lib\lua\lib\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(SolutionDir)x64\$(Configuration)\" /s /e /i /y
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\SDL2_Image.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libjpeg-9.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libpng16-16.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\zlib1.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libtiff-5.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\SDL2_mixer.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libFLAC-8.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmodplug-1.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmpg123-0.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libogg-0.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbis-0.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbisfile-3.dll" "$(SolutionDir)x64\$(Configuration)\"
+copy "$(SolutionDir)lib\SDL2_TTF\lib\x64\*.dll" "$(SolutionDir)x64\$(Configuration)\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL2_Image\include;$(SolutionDir)lib\SDL2_Mixer\include;$(SolutionDir)lib\zlib;$(SolutionDir)lib\lua\include;$(SolutionDir)lib\SDL2_TTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;zlibstat.lib;LuaProject.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL2_Image\lib\x64;$(SolutionDir)lib\SDL2_Mixer\lib\x64;$(SolutionDir)lib\zlib\contrib\vstudio\vc14\x64\ZlibStat$(Configuration);$(SolutionDir)lib\SDL2_TTF\lib\x64;$(SolutionDir)lib\lua\lib\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)" /s /e /i /y
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Image\lib\x64\libtiff-5.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libFLAC-8.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmodplug-1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_Mixer\lib\x64\libvorbisfile-3.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_TTF\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Components\AiControllerComponent.h" />
+    <ClInclude Include="Components\CheckBoxComponent.h" />
+    <ClInclude Include="Components\AlignmentComponent.h" />
+    <ClInclude Include="Components\ButtonComponent.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Components\Component.h" />
+    <ClInclude Include="Components\ColliderComponent.h" />
+    <ClInclude Include="Components\ControllerComponent.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Builders\GameObjectBuilder.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="Components\HealthComponent.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Components\InputBoxComponent.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LocalizationManager.h" />
+    <ClInclude Include="LuaSystem.h" />
+    <ClInclude Include="Components\ScriptComponent.h" />
+    <ClInclude Include="Components\SliderComponent.h" />
+    <ClInclude Include="Components\ScrollBoxComponent.h" />
+    <ClInclude Include="TestLuaFunctions.h" />
+    <ClInclude Include="Components\TextUiComponent.h" />
+    <ClInclude Include="Components\ToggleBoxComponent.h" />
+    <ClInclude Include="Utillities\Math.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="Components\PhysicsComponent.h" />
+    <ClInclude Include="Components\TransformComponent.h" />
+    <ClInclude Include="PhysicsSystem.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Interfaces\Scene.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Components\SpriteComponent.h" />
+    <ClInclude Include="Utillities\Timer.h" />
+    <ClInclude Include="Utillities\tinyxml2.h" />
+    <ClInclude Include="Utillities\Vector2.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Utillities\Debug_Log.h" />
+    <ClInclude Include="Utillities\Zipper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Components\AiControllerComponent.cpp" />
+    <ClCompile Include="Components\CheckBoxComponent.cpp" />
+    <ClCompile Include="Components\AlignmentComponent.cpp" />
+    <ClCompile Include="Components\ButtonComponent.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Components\Component.cpp" />
+    <ClCompile Include="Components\ColliderComponent.cpp" />
+    <ClCompile Include="Components\ControllerComponent.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Builders\GameObjectBuilder.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="Components\HealthComponent.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Components\InputBoxComponent.cpp" />
+    <ClCompile Include="Interfaces\Scene.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LocalizationManager.cpp" />
+    <ClCompile Include="LuaSystem.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="Components\PhysicsComponent.cpp" />
+    <ClCompile Include="Components\TransformComponent.cpp" />
+    <ClCompile Include="PhysicsSystem.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Components\SpriteComponent.cpp" />
+    <ClCompile Include="Components\ScriptComponent.cpp" />
+    <ClCompile Include="Components\SliderComponent.cpp" />
+    <ClCompile Include="Components\ScrollBoxComponent.cpp" />
+    <ClCompile Include="TestLuaFunctions.cpp" />
+    <ClCompile Include="Components\TextUiComponent.cpp" />
+    <ClCompile Include="Components\ToggleBoxComponent.cpp" />
+    <ClCompile Include="Utillities\tinyxml2.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Utillities\Debug_Log.cpp" />
+    <ClCompile Include="Utillities\Zipper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+    <Text Include="Todo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,41 @@
+<gameObject active ="false">
+	<nameId>InputButton</nameId>
+	<tag>Main Menu</tag>
+	<component name="TransformComponent">
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>225</scaleX>
+		<scaleY>75</scaleY>
+	</component>
+	<component name="AlignmentComponent">
+		<alignmentType>TOP</alignmentType>
+		<positionOffsetX>-7.5</positionOffsetX>
+		<positionOffsetY>19</positionOffsetY>
+	</component>
+	<component name="SpriteComponent">
+		<fileName>StartButton.png</fileName>
+		<numOfFrames>0</numOfFrames>
+		<animationSpeed>0</animationSpeed>
+		<textureColorValue_R>0</textureColorValue_R>
+		<textureColorValue_G>255</textureColorValue_G>
+		<textureColorValue_B>0</textureColorValue_B>
+	</component>
+	<component name="TextUiComponent">
+		<alignmentType>CENTER</alignmentType>
+		<fileName>Assets/comicbd.ttf</fileName>
+		<FontSize>40</FontSize>
+		<positionX>0</positionX>
+		<positionY>0</positionY>
+		<pText>INPUT</pText>
+		<pTag>INPUT</pTag>
+	</component>
+	<component name="ButtonComponent">
+		<buttonHoverColorR>255</buttonHoverColorR>
+		<buttonHoverColorG>255</buttonHoverColorG>
+		<buttonHoverColorB>0</buttonHoverColorB>
+	</component>
+
+</gameObject>
+

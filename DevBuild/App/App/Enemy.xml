@@ -1,0 +1,37 @@
+<gameObject active ="true">
+	<nameId>Enemy</nameId>
+	<tag>Game</tag>
+	<component name="TransformComponent">
+		<positionX>-1</positionX>
+		<positionY>1</positionY>
+		<rotationX>0</rotationX>
+		<rotationY>0</rotationY>
+		<scaleX>75</scaleX>
+		<scaleY>75</scaleY>
+	</component>
+	<component name="SpriteComponent">
+		<fileName>Enemy.png</fileName>
+		<numOfFrames> 0 </numOfFrames>
+		<animationSpeed> 0 </animationSpeed>
+		<textureColorValue_R> 255 </textureColorValue_R>
+		<textureColorValue_G> 255 </textureColorValue_G>
+		<textureColorValue_B> 255 </textureColorValue_B>
+	</component>
+	<component name="HealthComponent">
+		<max>100</max>
+		<min>0</min>
+	</component>
+	<component name="ColliderComponent">
+		<width>50</width>
+		<height>50</height>
+		<xOffset>12</xOffset>
+		<yOffset>12</yOffset>
+	</component>
+	<component name="ButtonComponent">
+		<buttonHoverColorR>255</buttonHoverColorR>
+		<buttonHoverColorG>255</buttonHoverColorG>
+		<buttonHoverColorB>0</buttonHoverColorB>
+	</component>
+</gameObject>
+
+

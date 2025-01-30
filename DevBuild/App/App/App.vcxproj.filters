@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\TestArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RadioButtonManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\GameArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBarUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreUIComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArksEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\TestArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RadioButtonManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\GameArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthBarUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreUIComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Background.xml" />
+    <Xml Include="StartButton.xml" />
+    <Xml Include="MainMenuBackground.xml" />
+    <Xml Include="PlayButton.xml" />
+    <Xml Include="OptionsButton.xml" />
+    <Xml Include="QuitButton.xml" />
+    <Xml Include="LanguageButton.xml" />
+    <Xml Include="LanguageBackGround.xml" />
+    <Xml Include="AmericaLanguageButton.xml" />
+    <Xml Include="FranceLanguageButton.xml" />
+    <Xml Include="ItalyLanguageButton.xml" />
+    <Xml Include="GermanLanguageButton.xml" />
+    <Xml Include="SpainLanguageButton.xml" />
+    <Xml Include="OptionsMenuScreenBackground.xml" />
+    <Xml Include="DifficultyButton.xml" />
+    <Xml Include="VolumeButton.xml" />
+    <Xml Include="BackButton.xml" />
+    <Xml Include="DifficultyMenuScreenBackground.xml" />
+    <Xml Include="HintCheckBox.xml" />
+    <Xml Include="Permadeath_RespawnToggleButton.xml" />
+    <Xml Include="EasyButton.xml" />
+    <Xml Include="NormalButton.xml" />
+    <Xml Include="HardButton.xml" />
+    <Xml Include="DifficultyBackButton.xml" />
+    <Xml Include="VolumeMenuScreenBackGround.xml" />
+    <Xml Include="VolumeBackButton.xml" />
+    <Xml Include="MuteCheckBox.xml" />
+    <Xml Include="MonoStereoToggleButton.xml" />
+    <Xml Include="SliderBar1.xml" />
+    <Xml Include="SliderBar2.xml" />
+    <Xml Include="SliderBar3.xml" />
+    <Xml Include="InputButton.xml" />
+    <Xml Include="InputScreenBackground.xml" />
+    <Xml Include="InputPaper.xml" />
+    <Xml Include="InputBackButton.xml" />
+    <Xml Include="GameBackground.xml" />
+    <Xml Include="Hero.xml" />
+    <Xml Include="Enemy.xml" />
+    <Xml Include="Enemy2.xml" />
+    <Xml Include="Enemy3.xml" />
+    <Xml Include="Hud.xml" />
+    <Xml Include="PauseMenuBackGround.xml" />
+    <Xml Include="ContinueButtonPauseMenu.xml" />
+    <Xml Include="QuitButtonPauseMenu.xml" />
+    <Xml Include="CharacterSelectBackground.xml" />
+    <Xml Include="SamCharacterSelect.xml" />
+    <Xml Include="MaxCharacterSelect.xml" />
+    <Xml Include="Sam.xml" />
+    <Xml Include="OutfitSelectBackground.xml" />
+    <Xml Include="Max.xml" />
+    <Xml Include="SamPajamas.xml" />
+    <Xml Include="SamTuxedo.xml" />
+    <Xml Include="SamScrubs.xml" />
+    <Xml Include="SamDuster.xml" />
+    <Xml Include="MaxPajamas.xml" />
+    <Xml Include="MaxBoyscout.xml" />
+    <Xml Include="MaxOpera.xml" />
+    <Xml Include="MaxWedding.xml" />
+    <Xml Include="ReadyMenu.xml" />
+    <Xml Include="SelectCharacterBackButton.xml" />
+    <Xml Include="SelectOutfitBackButton.xml" />
+    <Xml Include="ReadyBackButton.xml" />
+    <Xml Include="ReadyPlayButton.xml" />
+    <Xml Include="SongsBtn.xml" />
+    <Xml Include="SongsBackground.xml" />
+    <Xml Include="SongsBackBtn.xml" />
+    <Xml Include="Calculator.xml" />
+    <Xml Include="CalculatorBtn.xml" />
+    <Xml Include="Inventory.xml" />
+    <Xml Include="InventoryBackBttn.xml" />
+    <Xml Include="InventoryButton.xml" />
+  </ItemGroup>
+</Project>
