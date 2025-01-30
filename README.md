@@ -4,7 +4,7 @@ This is my 2d Game engine that i have been working on, in particular this is a c
 This is my 2d game engine that I developed using SDL and C++, I Implemented a optimized game loop, subsystem integrations, and error handling. I Utilized chrono for frame timings and Lua for scripting capabilities.
 I have been working on this on and off for about there years, some of it was for school and some of it was for practice durning the summers. Bellow are pictures of the recent update I did with brought a user interface system to my engine.
 
-Video: https://youtu.be/0vzdrccnj3A
+Video: [https://youtu.be/0vzdrccnj3A](https://youtu.be/BiAurRUGuyY)
 
 
 BUTTON HOVERING:
